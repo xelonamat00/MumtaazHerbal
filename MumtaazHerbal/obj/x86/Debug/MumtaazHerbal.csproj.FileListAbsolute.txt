@@ -1,0 +1,9 @@
+c:\users\radhika\documents\visual studio 2010\Projects\MumtaazHerbal\MumtaazHerbal\bin\Debug\MumtaazHerbal.exe
+c:\users\radhika\documents\visual studio 2010\Projects\MumtaazHerbal\MumtaazHerbal\bin\Debug\MumtaazHerbal.pdb
+c:\users\radhika\documents\visual studio 2010\Projects\MumtaazHerbal\MumtaazHerbal\obj\x86\Debug\MumtaazHerbal.Properties.Resources.resources
+c:\users\radhika\documents\visual studio 2010\Projects\MumtaazHerbal\MumtaazHerbal\obj\x86\Debug\MumtaazHerbal.csproj.GenerateResource.Cache
+c:\users\radhika\documents\visual studio 2010\Projects\MumtaazHerbal\MumtaazHerbal\obj\x86\Debug\MumtaazHerbal.exe.licenses
+c:\users\radhika\documents\visual studio 2010\Projects\MumtaazHerbal\MumtaazHerbal\obj\x86\Debug\MumtaazHerbal.exe
+c:\users\radhika\documents\visual studio 2010\Projects\MumtaazHerbal\MumtaazHerbal\obj\x86\Debug\MumtaazHerbal.pdb
+c:\users\radhika\documents\visual studio 2010\Projects\MumtaazHerbal\MumtaazHerbal\obj\x86\Debug\MumtaazHerbal.frmMain.resources
+C:\Users\radhika\documents\visual studio 2010\Projects\MumtaazHerbal\MumtaazHerbal\obj\x86\Debug\MumtaazHerbal.dftrItem.resources

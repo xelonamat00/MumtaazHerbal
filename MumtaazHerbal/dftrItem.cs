@@ -21,5 +21,20 @@ namespace MumtaazHerbal
         {
 
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            foreach (Form form in Application.OpenForms)
+            {
+                if (form.GetType() == typeof(tmbhItem))
+                {
+                    form.Activate();
+                    return;
+                }
+            }
+            tmbhItem item = new tmbhItem();
+            item.MdiParent = this.ParentForm;
+            item.Show();
+        }
     }
 }

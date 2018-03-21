@@ -13,6 +13,21 @@
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -35,15 +50,18 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevExpress.Data.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Dialogs.v17.2.Core, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Images.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Printing.v17.2.Core, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Utils.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraDialogs.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraGrid.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraLayout.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraNavBar.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraPrinting.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v17.2, Version=17.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -63,6 +81,24 @@
     <Compile Include="dftrItem.Designer.cs">
       <DependentUpon>dftrItem.cs</DependentUpon>
     </Compile>
+    <Compile Include="dftrPel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dftrPel.Designer.cs">
+      <DependentUpon>dftrPel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dftrPending.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dftrPending.Designer.cs">
+      <DependentUpon>dftrPending.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dtrSupp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dtrSupp.Designer.cs">
+      <DependentUpon>dtrSupp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,13 +111,61 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="kasir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kasir.Designer.cs">
+      <DependentUpon>kasir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pembayaran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pembayaran.Designer.cs">
+      <DependentUpon>pembayaran.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tmbhItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tmbhItem.Designer.cs">
+      <DependentUpon>tmbhItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tmbhPel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tmbhPel.Designer.cs">
+      <DependentUpon>tmbhPel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tmbhSupp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tmbhSupp.Designer.cs">
+      <DependentUpon>tmbhSupp.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="dftrItem.resx">
       <DependentUpon>dftrItem.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="dftrPel.resx">
+      <DependentUpon>dftrPel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dftrPending.resx">
+      <DependentUpon>dftrPending.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dtrSupp.resx">
+      <DependentUpon>dtrSupp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kasir.resx">
+      <DependentUpon>kasir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pembayaran.resx">
+      <DependentUpon>pembayaran.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -94,6 +178,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="tmbhItem.resx">
+      <DependentUpon>tmbhItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tmbhPel.resx">
+      <DependentUpon>tmbhPel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tmbhSupp.resx">
+      <DependentUpon>tmbhSupp.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -169,6 +262,43 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\plus %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diskette.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diskette %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coins.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stopwatch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stopwatch %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_printer_39263.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maps-and-flags.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

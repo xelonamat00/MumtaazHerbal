@@ -36,5 +36,68 @@ namespace MumtaazHerbal
             item.MdiParent = this;
             item.Show();
         }
+
+        private void btnAdd_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            foreach (Form form in Application.OpenForms)
+            {
+                if (form.GetType() == typeof(tmbhItem))
+                {
+                    form.Activate();
+                    return;
+                }
+            }
+            tmbhItem item = new tmbhItem();
+            item.MdiParent = this;
+            item.Show();
+        }
+
+        private void btnDftrSupp_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            foreach (Form form in Application.OpenForms)
+            {
+                if (form.GetType() == typeof(dftrSupp))
+                {
+                    form.Activate();
+                    return;
+                }
+            }
+
+            dftrSupp supp = new dftrSupp();
+            supp.MdiParent = this;
+            supp.Show();
+        }
+
+        private void btnDftrPel_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            foreach (Form form in Application.OpenForms)
+            {
+                if (form.GetType() == typeof(dftrPel))
+                {
+                    form.Activate();
+                    return;
+                }
+            }
+
+            dftrPel pel = new dftrPel();
+            pel.MdiParent = this;
+            pel.Show();
+        }
+
+        private void btnMenu_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            foreach (Form form in Application.OpenForms)
+            {
+                if (form.GetType() == typeof(kasir))
+                {
+                    form.Activate();
+                    return;
+                }
+            }
+
+            kasir ksr = new kasir();
+            ksr.MdiParent = this;
+            ksr.Show();
+        }
     }
 }

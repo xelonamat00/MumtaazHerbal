@@ -50,6 +50,7 @@
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.documentManager1 = new DevExpress.XtraBars.Docking2010.DocumentManager(this.components);
             this.tabbedView1 = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(this.components);
+            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.documentManager1)).BeginInit();
@@ -70,10 +71,11 @@
             this.btnAdd,
             this.barButtonItem8,
             this.btnDftrSupp,
-            this.btnDftrPel});
+            this.btnDftrPel,
+            this.barButtonItem2});
             this.ribbonControl1.LargeImages = this.imageCollection1;
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 17;
+            this.ribbonControl1.MaxItemId = 18;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
@@ -88,6 +90,7 @@
             this.btnMenu.ImageOptions.SvgImage = global::MumtaazHerbal.Properties.Resources._138256;
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnMenu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnMenu_ItemClick);
             // 
             // barButtonItem3
             // 
@@ -133,6 +136,7 @@
             this.btnAdd.ImageOptions.SvgImage = global::MumtaazHerbal.Properties.Resources.plus;
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText;
+            this.btnAdd.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnAdd_ItemClick);
             // 
             // barButtonItem8
             // 
@@ -147,6 +151,7 @@
             this.btnDftrSupp.ImageOptions.SvgImage = global::MumtaazHerbal.Properties.Resources.supplier;
             this.btnDftrSupp.Name = "btnDftrSupp";
             this.btnDftrSupp.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnDftrSupp.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDftrSupp_ItemClick);
             // 
             // btnDftrPel
             // 
@@ -155,6 +160,7 @@
             this.btnDftrPel.ImageOptions.SvgImage = global::MumtaazHerbal.Properties.Resources.pelanggan;
             this.btnDftrPel.Name = "btnDftrPel";
             this.btnDftrPel.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnDftrPel.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDftrPel_ItemClick);
             // 
             // imageCollection1
             // 
@@ -198,10 +204,11 @@
             this.ribbonPage2.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup2});
             this.ribbonPage2.Name = "ribbonPage2";
-            this.ribbonPage2.Text = "ribbonPage2";
+            this.ribbonPage2.Text = "Pembelian";
             // 
             // ribbonPageGroup2
             // 
+            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem2);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.Text = "ribbonPageGroup2";
             // 
@@ -212,6 +219,12 @@
             this.documentManager1.View = this.tabbedView1;
             this.documentManager1.ViewCollection.AddRange(new DevExpress.XtraBars.Docking2010.Views.BaseView[] {
             this.tabbedView1});
+            // 
+            // barButtonItem2
+            // 
+            this.barButtonItem2.Caption = "Daftar Pembelian";
+            this.barButtonItem2.Id = 17;
+            this.barButtonItem2.Name = "barButtonItem2";
             // 
             // frmMain
             // 
@@ -254,5 +267,6 @@
         private DevExpress.XtraBars.BarButtonItem btnDftrPel;
         private DevExpress.XtraBars.Docking2010.DocumentManager documentManager1;
         private DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView tabbedView1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
     }
 }
